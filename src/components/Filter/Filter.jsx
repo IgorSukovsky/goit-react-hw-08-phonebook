@@ -17,7 +17,7 @@ export default function Filter() {
         value={value}
         onChange={onChange}
         className={styles.input}
-        placeholder="FIND CONTACT BY NAME"
+        placeholder="Find contact by name!!!"
       />
     </label>
   );
