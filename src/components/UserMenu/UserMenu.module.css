@@ -1,0 +1,25 @@
+.formBtn {
+  border: none;
+  padding: 5px 20px;
+  margin: 15 0px;
+  border-radius: 30px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.formBtn:hover,
+.formBtn:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+  border: 1px solid #2196f3;
+}
+
+.username {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #2196f3;
+}

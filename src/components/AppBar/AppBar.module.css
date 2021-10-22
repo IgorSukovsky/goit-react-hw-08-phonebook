@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2196f3;
+  /* background-color: bisque; */
+  border-radius: 30px;
+  box-shadow: 1px 4px 6px rgba(230, 160, 160, 0.36),
+    0px 4px 4px rgba(0, 0, 0, 0.36), 0px 1px 1px rgba(189, 95, 95, 0.42);
+  background: linear-gradient(to right, #beabab 0%, #6ca8a4 50%, #eeecf5 100%);
+}
