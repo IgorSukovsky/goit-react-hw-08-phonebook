@@ -10,6 +10,11 @@ export default function RegisterView() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const [type, setType] = useState('password');
+  const toggleType = () => {
+    setType(prev => (prev === 'password' ? 'text' : 'password'));
+  };
+
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
       case 'name':
@@ -61,12 +66,19 @@ export default function RegisterView() {
         <label className={styles.label}>
           <input
             className={styles.input}
-            type="password"
+            type={type}
             name="password"
             value={password}
             onChange={handleChange}
             placeholder="PASSWORD"
           />
+          <button
+            className={styles.passwordControl}
+            type="button"
+            onClick={toggleType}
+          >
+            &#128065;
+          </button>
         </label>
 
         <button type="submit" className={styles.formBtn}>
