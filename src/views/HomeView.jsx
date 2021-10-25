@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from './phonebooksvg.png';
+import logo from '../img/phonebooksvg.png';
 
 const styles = {
   container: {

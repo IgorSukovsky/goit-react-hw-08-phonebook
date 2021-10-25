@@ -33,6 +33,10 @@ const authSlice = createSlice({
       state.error = action.payload.message;
     },
 
+    [authOperations.logIn.pending](state, action) {
+      state.error = '';
+    },
+
     [authOperations.logOut.fulfilled](state, action) {
       state.user = { name: null, email: null };
       state.token = null;
